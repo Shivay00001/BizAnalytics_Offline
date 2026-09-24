@@ -8,7 +8,10 @@ class MainWindow(tk.Tk):
         
         self.title("BizAnalytics Offline - Pro")
         self.geometry("1100x700")
-        self.state('zoomed') # Start maximized
+        try:
+            self.state('zoomed') # Start maximized (Windows)
+        except Exception:
+            self.attributes('-zoomed', True) # Linux/X11 maximize fallback
         self.configure(bg=BG_COLOR)
         
         # Apply Styles

@@ -1,37 +1,14 @@
-# BizAnalytics Offline - Setup & Run Guide
+# BizAnalytics Offline
 
-## Prerequisites
+Desktop GUI app (tkinter). Offline business analytics dashboard with sidebar navigation.
 
-1. Python 3.10+ installed.
-2. Install dependencies:
-
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-## Running the App
-
-Run the following command in your terminal from the project root:
+## Run
 
 ```bash
+pip install pandas numpy matplotlib fpdf
 python main.py
 ```
 
-## Features
+Requires Python 3.10+ with tkinter. Verified boot on Python 3.12 (Linux, xvfb, 2026-09-24) — window initializes with no errors.
 
-- **Dashboard**: View key metrics (Income, Expense, Profit, Repeat Customers) and Revenue Trend.
-- **Add Entry**: Log Income or Expenses. New customers are automatically created.
-- **Customers**: View customer list.
-- **Reports**: Export data to CSV or PDF (Pro feature).
-
-## Pro Version
-
-To simulate the "Basic" version (disable PDF export), edit `app/backend.py`:
-
-```python
-IS_PRO_VERSION = False
-```
-
-## Database
-
-The app creates a local SQLite file `biz_analytics.db` in the run directory. To reset data, simply delete this file.
+Not a web/cloud app: it is a desktop tool. Package with PyInstaller for distribution.
