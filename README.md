@@ -1,5 +1,7 @@
 # BizAnalytics Offline
 
+Built by [VisionQuantech](https://visionquantech.com) — AI agents, apps & tools for small businesses.
+
 Desktop GUI app (tkinter). Offline business analytics dashboard with sidebar navigation.
 
 ## Run
